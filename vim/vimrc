@@ -234,7 +234,7 @@ cnoreabbr <expr> bq 'BufClose'
 "  scopes and it sucks ass if it's highlighted then. And for exceptions I
 "  don't really want to have different colors for my own exceptions ;-)
 autocmd FileType python setlocal expandtab shiftwidth=4 tabstop=8
-\ formatoptions+=croq softtabstop=4 smartindent
+\ formatoptions+=croq softtabstop=4 smartindent ft=python.django
 \ cinwords=if,elif,else,for,while,try,except,finally,def,class,with
 let python_highlight_all=1
 let python_highlight_exceptions=0
