@@ -1,0 +1,17 @@
+alias ls="ls -hF"
+export PATH=$PATH:~/bin
+export MANPATH=$MANPATH:/opt/local/man
+export PS1='\[\e[0;32m\][\w]\[\e[0m\] $(vcprompt)\$ '
+export EDITOR="vim"
+# virtualenv
+export WORKON_HOME=$HOME/.virtualenvs
+. ~/bin/virtualenvwrapper_bashrc
+# PIP
+export PIP_LOG_FILE=/tmp/pip-log.txt
+export PIP_DOWNLOAD_CACHE=/tmp/pip_cache
+# Various bash completion scripts
+if [ -f `brew --prefix`/etc/bash_completion ]; then
+  . `brew --prefix`/etc/bash_completion
+fi
+. ~/django/extras/django_bash_completion
+. ~/git/git/contrib/completion/git-completion.bash 
