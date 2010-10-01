@@ -3,8 +3,6 @@ set backspace=indent,eol,start
 
 " Menus
 " This must happen before the syntax system is enabled
-aunmenu Help.
-aunmenu Window.
 let no_buffers_menu=1
 set mousemodel=popup
 
