@@ -45,6 +45,9 @@ set title
 set titleold="Terminal"
 set titlestring=%F\ -\ Vim
 
+" disable wrapping of long lines
+set nowrap
+
 " Enable filetype plugins and indention
 filetype on
 filetype plugin on
