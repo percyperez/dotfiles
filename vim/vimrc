@@ -141,7 +141,7 @@ nnoremap <leader>p :Lodgeit<CR>
 nnoremap <leader>. :lcd %:p:h<CR>
 
 " Easy switching
-nnoremap <leader>th :set ft=htmljinja<CR>
+nnoremap <leader>th :set ft=htmldjango<CR>
 nnoremap <leader>tp :set ft=python<CR>
 nnoremap <leader>tj :set ft=javascript<CR>
 nnoremap <leader>tr :set ft=rst<CR>
