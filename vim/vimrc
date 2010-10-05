@@ -159,6 +159,13 @@ function! ToggleRelativeAbsoluteNumber()
   endif
 endfunction
 
+" Bubble single lines
+nmap <C-Up> [e
+nmap <C-Down> ]e
+" Bubble multiple lines
+vmap <C-Up> [egv
+vmap <C-Down> ]egv
+
 " Make the command line two lines high and change the statusline display to
 " something that looks useful.
 set cmdheight=2
