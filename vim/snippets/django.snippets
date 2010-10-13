@@ -108,3 +108,7 @@ snippet r2r
 			${2}
 		}${3:, context_instance=RequestContext(request)}
 	)
+
+# Shortcuts
+snippet redirect
+	return redirect(reverse('${1:URL}'))
