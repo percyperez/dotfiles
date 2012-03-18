@@ -243,6 +243,8 @@ let python_highlight_exceptions=0
 let python_highlight_builtins=0
 autocmd FileType pyrex setlocal expandtab shiftwidth=4 tabstop=8 softtabstop=4 cinwords=if,elif,else,for,while,try,except,finally,def,class,with
 
+autocmd FileType python set omnifunc=pythoncomplete#Complete
+
 " ruby support
 " ------------
 autocmd FileType ruby setlocal expandtab shiftwidth=2 tabstop=2 softtabstop=2
@@ -250,6 +252,7 @@ autocmd FileType ruby setlocal expandtab shiftwidth=2 tabstop=2 softtabstop=2
 " php support
 " -----------
 autocmd FileType php setlocal shiftwidth=8 tabstop=8 softtabstop=8
+
 
 " template language support (SGML / XML too)
 " ------------------------------------------
