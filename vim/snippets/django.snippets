@@ -89,6 +89,11 @@ snippet model
 		def get_absolute_url(self):
 			return ('${7:view_or_url_name}' ${8})
 
+snippet modelform
+	class ${1:FormName}(forms.ModelForm):
+		"""${2:docstring}"""
+		${3}
+
 snippet modeladmin
 	class ${1:ModelName}Admin(admin.ModelAdmin):
 		${2}
