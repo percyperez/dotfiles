@@ -117,3 +117,11 @@ snippet r2r
 # Shortcuts
 snippet redirect
 	return redirect(reverse('${1:URL}'))
+
+# Tastypie
+snippet modelresource
+	class ${1:ModelResource}Resource(ModelResource):
+		class Meta:
+			fields = ('${2:fields}')
+			queryset = $1.objects.all()
+			resource_name = '$1'
