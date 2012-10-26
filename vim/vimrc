@@ -51,6 +51,9 @@ set nowrap
 
 " Enable filetype plugins and indention
 filetype plugin indent on
+" Omni completion
+filetype plugin on
+set ofu=syntaxcomplete#Complete
 
 " sets leader to ',' and localleader to "\"
 let mapleader=","
