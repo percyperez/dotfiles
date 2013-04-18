@@ -276,7 +276,7 @@ fun! s:SelectHTML()
   set ft=html
 endfun
 
-autocmd FileType html,xhtml,xml,htmldjango,htmljinja,eruby,mako setlocal expandtab shiftwidth=2 tabstop=2 softtabstop=2
+autocmd FileType html,xhtml,xml,htmldjango,htmljinja,eruby,mako setlocal expandtab shiftwidth=4 tabstop=8 softtabstop=4
 autocmd BufNewFile,BufRead *.rhtml setlocal ft=eruby
 autocmd BufNewFile,BufRead *.mako setlocal ft=mako
 autocmd BufNewFile,BufRead *.tmpl setlocal ft=htmljinja
@@ -301,6 +301,11 @@ autocmd FileType java setlocal shiftwidth=2 tabstop=8 softtabstop=2 expandtab
 autocmd BufNewFile,BufRead *.txt setlocal ft=rst
 autocmd FileType rst setlocal expandtab shiftwidth=4 tabstop=4 softtabstop=4
 \ formatoptions+=nqt textwidth=74
+
+" md
+" --
+autocmd BufNewFile,BufRead *.md set filetype=markdown
+autocmd FileType markdown setlocal expandtab shiftwidth=4 tabstop=8 softtabstop=4
 
 " C#
 autocmd FileType cs setlocal tabstop=4 softtabstop=4 shiftwidth=4
