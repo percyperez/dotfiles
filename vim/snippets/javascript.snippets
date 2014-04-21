@@ -19,6 +19,9 @@ snippet if
 snippet ife
 	if (${1:true}) {${2}}
 	else{${3}};
+# console.log
+snippet log
+	console.log(${1});
 # tertiary conditional
 snippet t
 	${1:/* condition */} ? ${2:a} : ${3:b}
@@ -72,3 +75,9 @@ snippet get
 # Get Element
 snippet gett
 	getElementBy${1:Id}('${2}')${3}
+# Mocha
+snippet it
+	it('Should ${1}', function(done) {
+	    ${2};
+	    done();
+	});
