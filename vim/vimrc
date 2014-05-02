@@ -322,3 +322,6 @@ autocmd FileType vim setlocal expandtab shiftwidth=2 tabstop=8 softtabstop=2
 " ----------
 autocmd FileType javascript setlocal expandtab tabstop=4 softtabstop=4 shiftwidth=4
 let javascript_enable_domhtmlcss=1
+
+" Executes
+execute pathogen#infect()
