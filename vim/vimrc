@@ -16,9 +16,9 @@ set modelines=0
 " Enable Syntax Colors
 syntax on
 if has("gui_running")
-  " colorscheme fruity
   colorscheme blackboard
-  set guifont=Inconsolata:h14
+  " set guifont=Inconsolata:h14
+  set guifont=DejaVu\ Sans\ Mono\ for\ Powerline:h14
   set fuoptions=maxvert,maxhorz
   " does not work properly on os x
   " au GUIEnter * set fullscreen
@@ -27,6 +27,9 @@ if has("gui_running")
 else
   colorscheme myterm
 endif
+
+let g:airline_powerline_fonts = 1
+let g:airline_theme='dark'
 
 " The PC is fast enough, do syntax highlight syncing from start
 autocmd BufEnter * :syntax sync fromstart
