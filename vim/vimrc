@@ -31,6 +31,8 @@ endif
 let g:airline_powerline_fonts = 1
 let g:airline_theme='dark'
 
+let JSHintUpdateWriteOnly=1
+
 " The PC is fast enough, do syntax highlight syncing from start
 autocmd BufEnter * :syntax sync fromstart
 
@@ -178,6 +180,9 @@ vmap <C-Down> ]egv
 set cmdheight=2
 set laststatus=2
 set statusline=[%l,%v\ %P%M]\ %f\ %r%h%w\ (%{&ff})\ %{fugitive#statusline()}
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
 set showcmd
 set number
 
@@ -215,6 +220,12 @@ set vb t_vb=
 
 " keep some more lines for scope
 set scrolloff=5
+
+" some syntastic settings
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
 
 " hide some files and remove stupid help
 let g:netrw_list_hide='^\.,.\(pyc\|pyo\|o\)$'
