@@ -136,6 +136,7 @@ nnoremap <leader>t :NERDTree<CR>
 let NERDTreeIgnore=['\~$', '\.pyc$', '\.pyo$', '\.class$', 'pip-log\.txt$', '\.o$']
 let NERDTreeSortOrder=['^__\.py$', '\/$', '*', '\.swp$',  '\.bak$', '\~$']
 let NERDTreeChDirMode=2 " CWD is changed whenever the tree root is changed
+let NERDTreeShowHidden=1
 
 " Scratch
 nmap <leader><tab> :Sscratch<CR><C-W>x<C-J>
